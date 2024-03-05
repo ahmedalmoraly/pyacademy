@@ -55,6 +55,9 @@
             <p class="mb-8 text-lg">
               {{ .content | markdownify }}
             </p>
+            <p class="mb-8 text-lg">
+              {{ .content_extra | markdownify }}
+            </p>
             <ul>
               {{ range .bulletpoints }}
                 <li class="relative mb-4 pl-6">
