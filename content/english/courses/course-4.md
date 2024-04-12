@@ -1,12 +1,13 @@
 ---
-title: "How to build an Application with modern Technology"
+title: "Introduction to Block-based Programming"
 meta_title: ""
 description: "this is meta description"
-date: 2022-04-04T05:00:00Z
+start_date: 2024-04-24T05:00:00Z
 image: "/images/image-placeholder.png"
-categories: ["Software"]
-author: "John Doe"
-tags: ["software", "tailwind"]
+language: "block-based"
+instructor: "Samiha Marwan"
+age_group: "8-10 years old"
+tags: ["block-based", "snap"]
 draft: false
 ---
 

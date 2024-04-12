@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "Learn more about our coming courses."
-    link: "#"
+    link: "/courses"
 
 # Features
 features:
@@ -26,7 +26,7 @@ features:
     button:
       enable: true
       label: "Learn more about our coming courses."
-      link: "#"
+      link: "/courses"
 
   # - title: "PY's Mission"
   #   image: "/images/service-2.png"

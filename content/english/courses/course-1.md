@@ -1,12 +1,13 @@
 ---
-title: "How to build an Application with modern Technology"
+title: "Introduction to Python"
 meta_title: ""
 description: "this is meta description"
-date: 2022-04-04T05:00:00Z
+start_date: 2024-04-24T05:00:00Z
 image: "/images/image-placeholder.png"
-categories: ["Technology", "Data"]
-author: "Sam Wilson"
-tags: ["technology", "tailwind"]
+language: "Python"
+instructor: "Samiha Marwan"
+age_group: "15-18 years old"
+tags: ["python"]
 draft: false
 ---
 
