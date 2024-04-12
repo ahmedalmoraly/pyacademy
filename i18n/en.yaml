@@ -10,6 +10,9 @@
 - id: related_posts
   translation: Related Posts
 
+- id: related_courses
+  translation: Related Courses
+
 - id: categories
   translation: Categories
 
