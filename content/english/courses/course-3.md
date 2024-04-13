@@ -1,13 +1,14 @@
 ---
-title: "Introduction to HTML"
+title: "Introduction to Block-based Programming"
 meta_title: ""
 description: "this is meta description"
 start_date: 2024-04-24T05:00:00Z
 image: "/images/image-placeholder.png"
-language: "HTML"
+language: "block-based"
 instructor: "Samiha Marwan"
-age_group: "15-18 years old"
-tags: ["html"]
+age_group: "8-10 years old"
+tags: ["block-based", "snap"]
+location: Alnoor Islamic Center
 draft: false
 ---
 

@@ -4,9 +4,17 @@
       <div
         class="row border-border dark:border-darkmode-border justify-center border-b pb-14">
         <div class="lg:col-4 text-center">
-          {{ $image:= .Params.image }}
+          {{ with .Params.image }}
+            {{ with resources.Get . }}
+              {{ with .Fill "400x400 webp" }}
+                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ .Title }}" class="mx-auto mb-6 rounded">
+              {{ end }}
+            {{ end }}
+          {{ end }}
+  
+          {{/*  {{ $image:= .Params.image }}
           {{ if $image }}
-            {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "mx-auto" "Size" "200x200") }}
+            {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "mx-auto" "Size" "400x400") }}
           {{ else if .Params.Email }}
             <img
               class="mx-auto"
@@ -14,7 +22,7 @@
               height="200"
               width="200"
               src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon" />
-          {{ end }}
+          {{ end }}  */}}
           <h1 class="h3 mt-10">{{ .Title }}</h1>
           <div class="content mt-6">
             {{ .Content }}
@@ -36,7 +44,11 @@
       </div>
 
       <div class="row pb-16 pt-14">
-        {{ $filterByInstructor := where site.RegularPages "Params.intstructor" "==" .Title }}
+        {{ $filterByInstructor := where site.RegularPages "Params.instructor" "==" .Title }}
+        {{ if gt $filterByInstructor.Len 1 }}
+          
+        <h1 class="h3 m-8">Current Courses</h1>
+        {{ end }}
         {{ range $filterByInstructor }}
           <div class="md:col-6 lg:col-4 mb-12">
             {{ partial "components/course-card" . }}

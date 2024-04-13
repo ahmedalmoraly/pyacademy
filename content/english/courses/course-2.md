@@ -1,13 +1,14 @@
 ---
-title: "Introduction to Block-based Programing"
+title: "Introduction to Python"
 meta_title: ""
 description: "this is meta description"
 start_date: 2024-04-24T05:00:00Z
 image: "/images/image-placeholder.png"
-language: "Python"
+language: "HTML"
 instructor: "Samiha Marwan"
-age_group: "15-18 years old"
-tags: ["block-based", "snap"]
+age_group: "13-15 years old"
+tags: ["Python"]
+location: Alnoor Islamic Center
 draft: false
 ---
 

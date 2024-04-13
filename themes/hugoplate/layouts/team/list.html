@@ -6,7 +6,7 @@
     <div class="container">
       <div class="row justify-center">
         <div class="md:col-6 lg:col-4 text-center">
-          {{range .RegularPages }}
+          {{range .RegularPages.ByWeight }}
             {{if not .Params.showInList }}
               {{ partial "components/main-team-card" . }}
             {{ end }}

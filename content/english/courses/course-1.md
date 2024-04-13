@@ -6,8 +6,9 @@ start_date: 2024-04-24T05:00:00Z
 image: "/images/image-placeholder.png"
 language: "Python"
 instructor: "Samiha Marwan"
-age_group: "15-18 years old"
-tags: ["python"]
+age_group: "10-12 years old"
+tags: ["Python"]
+location: Alnoor Islamic Center
 draft: false
 ---
 
