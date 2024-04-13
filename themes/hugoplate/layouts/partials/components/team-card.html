@@ -1,7 +1,15 @@
 <div
   class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8 text-center">
-  {{ $image:= .Params.image }}
-  {{ if $image }}
+  <a href="{{ .RelPermalink }}">
+    {{ with .Params.image }}
+      {{ with resources.Get . }}
+        {{ with .Fill "400x400 webp" }}
+          <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ .Title }}" class="mx-auto mb-6 rounded">
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </a>
+  {{/*  {{ if .Params.image }}
     {{ $img:= resources.Get .Params.image }}
     {{ partial "image" (dict "Src" $img "Alt" .Title "Class" "mx-auto mb-6 rounded")  }}
   {{ else if .Params.Email }}
@@ -11,7 +19,7 @@
       height="120"
       width="120"
       src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon" />
-  {{ end }}
+  {{ end }}  */}}
   <h4 class="mb-3">
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </h4>
@@ -28,4 +36,7 @@
       </li>
     {{ end }}
   </ul>
+  <a class="btn btn-outline-primary btn-sm mt-5" href="{{ .RelPermalink }}">
+    {{ i18n "read_more" }}
+  </a>
 </div>

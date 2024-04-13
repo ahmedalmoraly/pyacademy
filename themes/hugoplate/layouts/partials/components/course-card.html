@@ -17,6 +17,11 @@
         </a>
       </li>
       <li class="mr-4 inline-block">
+        <a href="{{ `team/` | relLangURL }}{{ .Params.instructor | urlize }}/">
+          <i class="fa-regular fa-location-dot mr-2"></i>{{ .Params.location }}
+        </a>
+      </li>
+      <li class="mr-4 inline-block">
         <i class="fa-regular fa-folder mr-1"></i>
         {{ range $i,$p:= $tags }}
           <a

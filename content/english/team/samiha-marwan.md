@@ -2,12 +2,17 @@
 showInList: false 
 title: Samiha Marwan
 email: samihamarwan21@gmail.com
-image: "/images/avatar.jpg"
+image: "/images/team/samiha-2.jpg"
 description: this is meta description
+weight: 1
 social:
-  - name: email
-    icon: fa-regular fa-envelope
-    link: "mailto:info@pyacademy.org"
+  - name: website
+    icon: fa-regular fa-globe
+    link: https://samihamarwan.com
+
+  # - name: email
+  #   icon: fa-regular fa-envelope
+  #   link: "mailto:info@pyacademy.org"
 
   # - name: github
   #   icon: fa-brands fa-github
