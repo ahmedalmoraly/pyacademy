@@ -8,33 +8,44 @@
       {{ .Title }}
     </a>
   </h4>
-  {{ $tags:= .Params.tags }}
-  {{ if $tags }}
-    <ul class="mb-4">
-      <li class="mr-4 inline-block">
-        <a href="{{ `team/` | relLangURL }}{{ .Params.instructor | urlize }}/">
-          <i class="fa-regular fa-circle-user mr-2"></i>{{ .Params.instructor }}
+  <ul class="mb-4">
+    {{/*  Instructor  */}}
+    <li class="mr-4 inline-block">
+      <a href="{{ `team/` | relLangURL }}{{ .Params.instructor | urlize }}/">
+        <i class="fa-regular fa-circle-user mr-2"></i>{{ .Params.instructor }}
+      </a>
+    </li>
+    {{/*  Language  */}}
+    <li class="mr-4 inline-block">
+      <i class="fa-regular fa-laptop-code mr-2"></i>
+      {{ .Params.language }}
+    </li>
+    {{/*  Age Group  */}}
+    <li class="mr-4 inline-block">
+      <i class="fa-regular fa-user mr-2"></i>
+      {{ .Params.age_group }}
+    </li>
+    {{/*  Location  */}}
+    <li class="mr-4 inline-block">
+      <a href="{{ `team/` | relLangURL }}{{ .Params.instructor | urlize }}/">
+        <i class="fa-regular fa-location-dot mr-2"></i>{{ .Params.location }}
+      </a>
+    </li>
+    {{/*  Tags  */}}
+    <li class="mr-4 inline-block">
+      <i class="fa-regular fa-folder mr-1"></i>
+      {{ $tags:= .Params.tags }}
+      {{ range $i,$p:= $tags }}
+        <a
+          href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/"
+          class="ms-1"
+          >{{ . | humanize }}{{ if ne $i (sub (len $tags) 1) }}
+            {{ "," }}
+          {{ end }}
         </a>
-      </li>
-      <li class="mr-4 inline-block">
-        <a href="{{ `team/` | relLangURL }}{{ .Params.instructor | urlize }}/">
-          <i class="fa-regular fa-location-dot mr-2"></i>{{ .Params.location }}
-        </a>
-      </li>
-      <li class="mr-4 inline-block">
-        <i class="fa-regular fa-folder mr-1"></i>
-        {{ range $i,$p:= $tags }}
-          <a
-            href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/"
-            class="ms-1"
-            >{{ . | humanize }}{{ if ne $i (sub (len $tags) 1) }}
-              {{ "," }}
-            {{ end }}
-          </a>
-        {{ end }}
-      </li>
-    </ul>
-  {{ end }}
+      {{ end }}
+    </li>
+  </ul>
   <p class="mb-6">{{ .Summary }}</p>
   <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
     {{ i18n "read_more" }}
