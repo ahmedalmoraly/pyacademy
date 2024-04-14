@@ -3,7 +3,7 @@ title: "Code Your Own Games"
 meta_title: ""
 description: "this is meta description"
 # start_date: 2024-04-24T05:00:00Z
-image: "/images/snap-course1.png"
+image: "/images/courses/snap-course1.png"
 language: "block-based"
 instructor: "Samiha Marwan"
 age_group: "8-9 years old"

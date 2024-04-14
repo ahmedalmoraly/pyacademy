@@ -3,7 +3,7 @@ title: "Python for Beginners"
 meta_title: ""
 description: "this is meta description"
 # start_date: 2024-04-24T05:00:00Z
-image: "/images/python1-course.png"
+image: "/images/courses/python1-course.png"
 language: "Python"
 instructor: "Samiha Marwan"
 age_group: "10-12 years old"

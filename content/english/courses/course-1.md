@@ -3,7 +3,7 @@ title: "Introduction to Python"
 meta_title: ""
 description: "this is meta description"
 start_date: 2024-04-22T00:00:00Z
-image: "/images/python2-course.png"
+image: "/images/courses/python2-course.png"
 language: "Python"
 instructor: "Samiha Marwan"
 age_group: "13-15 years old"
