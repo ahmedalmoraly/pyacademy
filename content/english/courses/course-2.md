@@ -2,7 +2,7 @@
 title: "Introduction to Python"
 meta_title: ""
 description: "this is meta description"
-start_date: 2024-04-24T05:00:00Z
+start_date: 2024-04-20T00:00:00Z
 image: "/images/image-placeholder.png"
 language: "HTML"
 instructor: "Samiha Marwan"
