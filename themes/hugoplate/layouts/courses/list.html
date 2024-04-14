@@ -8,7 +8,7 @@
         <!-- blog posts -->
         <div class="lg:col-10">
           <div class="row">
-            {{ $paginator:= .Paginate .RegularPages.ByTitle }}
+            {{ $paginator:= .Paginate .RegularPages.ByWeight }}
             {{ range $paginator.Pages }}
               <div class="md:col-6 mb-14">
                 {{ partial "components/course-card" . }}
