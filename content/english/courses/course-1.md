@@ -2,24 +2,19 @@
 title: "Introduction to Python"
 meta_title: ""
 description: "this is meta description"
-start_date: 2024-04-24T05:00:00Z
-image: "/images/image-placeholder.png"
+start_date: 2024-04-22T00:00:00Z
+image: "/images/courses/python2-course.png"
 language: "Python"
 instructor: "Samiha Marwan"
-age_group: "10-12 years old"
+age_group: "13-15 years old"
 tags: ["Python"]
-location: Alnoor Islamic Center
+location: Alnoor Islamic Center, Fuquay Varina, NC
 draft: false
+weight: 1
 ---
 
-Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
+If your kid is eager to learn programming before graduating from high school, then this is the correct course for them. Python is amongst the top 5 widely used high-level programming languages nowadays! 
+This Python course consists of 4 classes, each is 90 minutes long. The course curriculum includes (but not limited to) these topics: Functions & Variables, for loops, if statements, and Graphics library. This course does not require the student to have prior programming knowledge. If you are not sure if this is the right course for you, schedule a free consultation here: info@pyacademy.org
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
 
-## Creative Design
-
-Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
-
-> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+{{< button label="Register Here" link="https://form.jotform.com/241043545930148" style="solid" >}}

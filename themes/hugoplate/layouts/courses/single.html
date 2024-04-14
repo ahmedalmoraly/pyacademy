@@ -3,11 +3,12 @@
     <div class="container">
       <div class="row justify-center">
         <article class="lg:col-10">
-          {{ $image:= .Params.image }}
-          {{ if $image }}
-            <div class="mb-10">
-              {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "w-full rounded") }}
-            </div>
+          {{ with .Params.image }}
+            {{ with resources.Get . }}
+              {{ with .Fit "600x600 webp" }}
+                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ .Title }}" class="mx-auto mb-10 rounded">
+              {{ end }}
+            {{ end }}
           {{ end }}
           <h1 class="h2 mb-4">
             {{ .Title }}
@@ -37,7 +38,11 @@
             {{ end }}
             <li class="mr-4 inline-block">
               <i class="fa-regular fa-clock mr-2"></i>
-              {{ time.Format ":date_long" .Params.start_date }}
+              {{ if .Params.start_date }}
+                {{ time.Format ":date_long" .Params.start_date }}
+              {{ else }}
+                coming soon
+              {{end}}
             </li>
             <li class="mr-4 inline-block">
               <i class="fa-regular fa-laptop-code mr-2"></i>

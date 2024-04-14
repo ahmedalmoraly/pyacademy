@@ -3,7 +3,7 @@
 banner:
   title: "Welcome to PY Academy!"
   content: "A Gateway to **P**rogramming for **Y**'all"
-  image: "/images/banner.png"
+  image: "/images/banner.jpg"
   button:
     enable: true
     label: "Learn more about our coming courses."

@@ -10,9 +10,9 @@ social:
     icon: fa-regular fa-globe
     link: https://samihamarwan.com
 
-  # - name: email
-  #   icon: fa-regular fa-envelope
-  #   link: "mailto:info@pyacademy.org"
+  - name: email
+    icon: fa-regular fa-envelope
+    link: "mailto:info@pyacademy.org"
 
   # - name: github
   #   icon: fa-brands fa-github
