@@ -1,7 +1,7 @@
 <div class="bg-body dark:bg-darkmode-body">
   {{ with .Params.image }}
     {{ with resources.Get . }}
-      {{ with .Resize "300x300 webp" }}
+      {{ with .Resize "400x400 webp" }}
         <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ .Title }}" class="mx-auto mb-6 rounded">
       {{ end }}
     {{ end }}

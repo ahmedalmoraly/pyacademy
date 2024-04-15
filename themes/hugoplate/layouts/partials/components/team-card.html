@@ -3,7 +3,7 @@
   <a href="{{ .RelPermalink }}">
     {{ with .Params.image }}
       {{ with resources.Get . }}
-        {{ with .Fill "400x400 webp" }}
+        {{ with .Fill "200x200 webp" }}
           <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ .Title }}" class="mx-auto mb-6 rounded">
         {{ end }}
       {{ end }}
