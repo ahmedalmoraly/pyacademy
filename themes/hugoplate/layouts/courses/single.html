@@ -5,9 +5,9 @@
         <article class="lg:col-10">
           {{ with .Params.image }}
             {{ with resources.Get . }}
-              {{ with .Fit "600x600 webp" }}
+              {{/*  {{ with .Fit "600x600 webp" }}  */}}
                 <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ .Title }}" class="mx-auto mb-10 rounded">
-              {{ end }}
+              {{/*  {{ end }}  */}}
             {{ end }}
           {{ end }}
           <h1 class="h2 mb-4">
@@ -55,8 +55,8 @@
             </li>
             {{/*  Location  */}}
             <li class="mr-4 inline-block">
-              <a href="{{ `team/` | relLangURL }}{{ .Params.instructor | urlize }}/">
-                <i class="fa-regular fa-location-dot mr-2"></i>{{ .Params.location }}
+              <a target="_blank" href="{{ .Params.location.link }}">
+                <i class="fa-regular fa-location-dot mr-2"></i>{{ .Params.location.text }}
               </a>
             </li>
           </ul>
