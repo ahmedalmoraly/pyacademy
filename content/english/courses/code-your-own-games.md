@@ -8,7 +8,10 @@ language: "block-based"
 instructor: "Samiha Marwan"
 age_group: "8-9 years old"
 tags: ["block-based", "snap"]
-location: Alnoor Islamic Center, Fuquay Varina, NC
+location: {
+    text: "Alnoor Islamic Center, Fuquay Varina, NC",
+    link: "https://maps.app.goo.gl/ccKXiEt6zdC3FZEa8"
+}
 draft: false
 weight: 3
 ---

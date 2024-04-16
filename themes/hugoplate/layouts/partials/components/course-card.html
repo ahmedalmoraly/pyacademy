@@ -1,4 +1,5 @@
 <div class="bg-body dark:bg-darkmode-body">
+  <a href="{{ .RelPermalink }}">
   {{ with .Params.image }}
     {{ with resources.Get . }}
       {{ with .Resize "400x400 webp" }}
@@ -6,6 +7,7 @@
       {{ end }}
     {{ end }}
   {{ end }}
+</a>
   <h4 class="mb-3">
     <a href="{{ .RelPermalink }}">
       {{ .Title }}
@@ -30,23 +32,9 @@
     </li>
     {{/*  Location  */}}
     <li class="mr-4 inline-block">
-      <a href="{{ `team/` | relLangURL }}{{ .Params.instructor | urlize }}/">
-        <i class="fa-regular fa-location-dot mr-2"></i>{{ .Params.location }}
+      <a target="_blank" href="{{ .Params.location.link }}">
+        <i class="fa-regular fa-location-dot mr-2"></i>{{ .Params.location.text }}
       </a>
-    </li>
-    {{/*  Tags  */}}
-    <li class="mr-4 inline-block">
-      <i class="fa-regular fa-folder mr-1"></i>
-      {{ $tags:= .Params.tags }}
-      {{ range $i,$p:= $tags }}
-        <a
-          href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/"
-          class="ms-1"
-          >{{ . | humanize }}{{ if ne $i (sub (len $tags) 1) }}
-            {{ "," }}
-          {{ end }}
-        </a>
-      {{ end }}
     </li>
   </ul>
   <p class="mb-6">{{ .Summary }}</p>

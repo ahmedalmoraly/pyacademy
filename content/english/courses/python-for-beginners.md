@@ -8,7 +8,10 @@ language: "Python"
 instructor: "Samiha Marwan"
 age_group: "10-12 years old"
 tags: ["Python"]
-location: Alnoor Islamic Center, Fuquay Varina, NC
+location: {
+    text: "Alnoor Islamic Center, Fuquay Varina, NC",
+    link: "https://maps.app.goo.gl/ccKXiEt6zdC3FZEa8"
+}
 draft: false
 weight: 2
 ---
