@@ -16,6 +16,11 @@ name = "Courses"
 url = "courses/"
 weight = 3
 
+[[main]]
+name = "Python Playground"
+url = "playground/"
+weight = 4
+
 # [[main]]
 # name = "Elements"
 # url = "elements/"
