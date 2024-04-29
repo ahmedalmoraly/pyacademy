@@ -1,1 +1,43 @@
 // Add your own custom styles here
+.float{
+	position:fixed;
+	// width:70px;
+	// height:70px;
+	bottom:40px;
+	right:40px;
+	// background-color:#ffffff00;
+	// color:#FFF0;
+	// border-radius:50px;
+	// text-align:center;
+    // font-size:64px;
+	// box-shadow: 2px 2px 3px #74C0FC;
+    z-index:100;
+}
+
+.float-round-button{
+	position:fixed;
+	width:70px;
+	height:70px;
+	bottom:40px;
+	right:40px;
+	background-color:#ffffff00;
+	color:#FFF0;
+	border-radius:50px;
+	text-align:center;
+    font-size:52px;
+	// box-shadow: 2px 2px 3px #74C0FC;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+// tab
+.tab {
+	&-content {
+	  &-panel {
+		@apply px-0 pt-1 #{!important};
+	  }
+	}
+  }
