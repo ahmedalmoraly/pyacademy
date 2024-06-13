@@ -28,9 +28,14 @@ features:
       label: "Learn more about our coming courses."
       link: "/courses"
 
-  # - title: "PY's Mission"
-  #   image: "/images/service-2.png"
-  #   content: "PY is an in-person coding academy that teaches introductory programming courses. PY offers in-person courses using a structured curriculum, empowering individuals to realize their potential in the world of programming."
+  - title: "PY's Mission"
+    image: "/images/pymascot-excited.png"
+    content: "PY is an in-person coding academy that teaches introductory programming courses. PY offers in-person courses using a structured curriculum, empowering individuals to realize their potential in the world of programming."
+
+  - title:  "PY's Vision"
+    image: "/images/pymascot-happy.png"
+    content: "We strive to make PY a gateway for all learners to discover the joy of coding. We seek to build encouraging programming platforms that make programming accessible to everyone. Using research-based advancements in Education Technology, we envision a programming academy that can offer personalized programming instruction based on the learners’ needs, unlocking doors to new opportunities for learners in the world of technology."
+
   #   # bulletpoints:
   #   #   - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
   #   #   - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."

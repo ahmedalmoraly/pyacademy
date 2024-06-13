@@ -1,0 +1,7 @@
+<!-- Whatsapp -->
+{{ with site.Params.whatsapp }}
+<a aria-label="Chat on WhatsApp" href="{{ .link }}" target="_blank" class="float"> 
+    {{ partial "image" (dict "Src" "images/WhatsAppButtonWhiteLarge.svg" "Alt" "Chat on WhatsApp" )}}
+</a>
+{{ end }}
+<!-- /Whatsapp -->

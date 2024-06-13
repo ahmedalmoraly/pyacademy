@@ -36,14 +36,12 @@
                 {{ end }}
               </li>
             {{ end }}
-            <li class="mr-4 inline-block">
-              <i class="fa-regular fa-clock mr-2"></i>
-              {{ if .Params.start_date }}
+            {{ if .Params.start_date }}
+              <li class="mr-4 inline-block">
+                <i class="fa-regular fa-clock mr-2"></i>
                 {{ time.Format ":date_long" .Params.start_date }}
-              {{ else }}
-                Coming Soon
-              {{end}}
-            </li>
+              </li>
+            {{end}}
             <li class="mr-4 inline-block">
               <i class="fa-regular fa-laptop-code mr-2"></i>
               {{ .Params.language }}
@@ -54,11 +52,13 @@
               {{ .Params.age_group }}
             </li>
             {{/*  Location  */}}
-            <li class="mr-4 inline-block">
-              <a target="_blank" href="{{ .Params.location.link }}">
-                <i class="fa-regular fa-location-dot mr-2"></i>{{ .Params.location.text }}
-              </a>
-            </li>
+            {{ if .Params.location }}
+              <li class="mr-4 inline-block">
+                <a target="_blank" href="{{ .Params.location.link }}">
+                  <i class="fa-regular fa-location-dot mr-2"></i>{{ .Params.location.text }}
+                </a>
+              </li>
+            {{ end }}
           </ul>
           <div class="content mb-10">
             {{ .Content }}
@@ -81,9 +81,9 @@
                 </ul>
               </div>
             {{ end }}
-            <div class="lg:col-4 flex items-center">
+            {{/*  <div class="lg:col-4 flex items-center">
               {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (i18n "share") "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false) }}
-            </div>
+            </div>  */}}
           </div>
           <!-- comments -->
           {{ if site.Config.Services.Disqus.Shortname }}

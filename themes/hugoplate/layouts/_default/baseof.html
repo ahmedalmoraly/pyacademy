@@ -38,6 +38,8 @@
       {{ block "main" . }}{{ end }}
     </main>
 
+    {{ partialCached "components/whatsapp-button" . }}
+
     <!-- cache partial only in production -->
     {{ if hugo.IsProduction }}
       {{ partialCached "essentials/footer.html" . }}

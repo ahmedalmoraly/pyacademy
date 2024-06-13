@@ -28,6 +28,12 @@ google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 custom_script = ""
 # copyright
 copyright = "© 2024 - PY Academy. All Rights Reserved."
+#email
+email = "info@pyacademy.org"
+
+[whatsapp]
+enable = true
+link = "https://wa.me/message/T3LXNJMIJMEMK1"
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
@@ -99,7 +105,3 @@ enable = false
 # mailchimp subsciption
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"
-
-[whatsapp]
-enable = true
-link = "https://wa.me/message/T3LXNJMIJMEMK1"
