@@ -31,11 +31,13 @@
       {{ .Params.age_group }}
     </li>
     {{/*  Location  */}}
-    <li class="mr-4 inline-block">
-      <a target="_blank" href="{{ .Params.location.link }}">
-        <i class="fa-regular fa-location-dot mr-2"></i>{{ .Params.location.text }}
-      </a>
-    </li>
+    {{ if .Params.location }}
+      <li class="mr-4 inline-block">
+        <a target="_blank" href="{{ .Params.location.link }}">
+          <i class="fa-regular fa-location-dot mr-2"></i>{{ .Params.location.text }}
+        </a>
+      </li>
+    {{ end }}
   </ul>
   <p class="mb-6">{{ .Summary }}</p>
   <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
