@@ -37,7 +37,7 @@
 .tab {
 	&-content {
 	  &-panel {
-		@apply px-0 pt-1 #{!important};
+			@apply px-0 pt-1 #{!important};
 	  }
 	}
-  }
+}
