@@ -26,7 +26,7 @@ courses: [
   }
 ]
 ---
-{{< image src="images/courses/py-icm-courses.jpeg" caption="" alt="" height="512" width="512" position="center" command="fill" option="q100" class="mx-auto mb-6 rounded" title="PY Courses @ ICM"  webp="true" >}}
+{{< image src="images/courses/py-icm-flyer.jpeg" caption="" alt="" height="512" width="512" position="center" command="fill" option="q100" class="mx-auto mb-6 rounded" title="PY Courses @ ICM"  webp="true" >}}
 
 This Summer, PY is offering three programming courses serving ages 8-16 years old hosted by the Islamic Center of Morrisville. 
 
